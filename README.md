@@ -1,50 +1,76 @@
-# Welcome to your Expo app 👋
+## ✅ `swing-trade-app/README.md` (Frontend)
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+```markdown
+# 📱 Swing Trade AI Agent – Frontend (React Native with Expo)
 
-## Get started
+This is the mobile frontend for the Swing Trade AI Agent.  
+Built using **React Native**, **Expo Router**, and modern UI practices.  
+It connects to the FastAPI backend to display swing trade recommendations, market sentiment, risk level, and trade history.
 
-1. Install dependencies
+---
 
-   ```bash
-   npm install
-   ```
+## 🚀 Features
 
-2. Start the app
+- Clean 5-tab navigation (Home, Suggest, History, Charts, About Us)
+- Mobile-friendly, responsive UI
+- Connects to backend API for live AI-powered recommendations
+- Display history logs from backend
+- Easy to run on iOS, Android, or Web via Expo
 
-   ```bash
-   npx expo start
-   ```
+---
 
-In the output, you'll find options to open the app in a
+## 📦 Setup Instructions
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
+### 1. Clone the repo
 
 ```bash
-npm run reset-project
-```
+git clone https://github.com/alinfosystems/swing-trade-app.git
+cd swing-trade-app
+2. Install dependencies
+bash
+Copy
+Edit
+npm install
+3. Update Backend API URL
+In config.js, change the BASE_URL to your backend address:
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+js
+Copy
+Edit
+export const BASE_URL = "http://192.168.x.x:8000"; // or use localhost for web
+4. Run the App
+bash
+Copy
+Edit
+npx expo start
+Scan the QR code using Expo Go on your phone
 
-## Learn more
+Or press w to open it in your browser
 
-To learn more about developing your project with Expo, look at the following resources:
+🧭 Navigation
+🏠 Home: Welcome screen with logo
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+📈 Suggest: Gets the latest swing trade suggestion
 
-## Join the community
+🗂 History: Shows previously generated results
 
-Join our community of developers creating universal apps.
+📊 Charts: Placeholder for future data visualizations
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+ℹ️ About Us: App info and credits
+
+📁 Folder Structure
+bash
+Copy
+Edit
+app/
+├── index.js        # Home screen
+├── suggest.js      # Suggestion screen
+├── history.js      # History screen
+├── charts.js       # Charts screen
+└── about.js        # About Us screen
+
+assets/
+└── logo.png        # App logo
+🤝 Contact
+For any questions, support, or partnership inquiries:
+📧 contactalinfosystems@gmail.com
